@@ -282,3 +282,7 @@ fieldset {
 .button, .search-form__label:has(.search-form__checkbox), .content__card-link {
   cursor: pointer;
 }
+
+.result__video-container, .content__list-container {
+  position: relative;
+}
