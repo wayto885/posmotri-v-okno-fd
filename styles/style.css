@@ -182,11 +182,11 @@ fieldset {
   gap: 5px;
   align-items: center;
   width: fit-content;
-  padding: 1px;
 }
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -224,4 +224,37 @@ fieldset {
 
 .search-form__textfield::placeholder {
   opacity: .7;
+}
+
+.button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 5px 0;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
+  margin-top: 30px;
+  width: 100%;
 }
