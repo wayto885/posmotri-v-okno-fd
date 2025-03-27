@@ -278,3 +278,7 @@ fieldset {
   margin-top: 30px;
   width: 100%;
 }
+
+.button, .search-form__label:has(.search-form__checkbox), .content__card-link {
+  cursor: pointer;
+}
