@@ -48,9 +48,11 @@ input {
   border: none;
 }
 
-.search-form__textfield,
+.result__video:focus,
+.search-form__label:has(:focus),
+.search-form__textfield:focus,
 .content__card-link:focus,
-.search-form__label:has(:focus) {
+.button:focus {
   outline: none;
 }
 
@@ -208,29 +210,13 @@ input {
   padding-inline: 3px;
 }
 
-.content__video-card {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.content__video-card-description-container {
-  flex-grow: 1;
-  overflow: hidden;
-}
-
-.content__video-card-thumbnail {
-  flex-shrink: 0;
-  object-fit: cover;
-  inline-size: 194px;
-  block-size: 103px;
-}
-
 .content__card-link {
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
+.content__card-link:active,
 .content__card-link_current {
   background-color: #545050;
 }
@@ -243,6 +229,16 @@ input {
   outline: 1px solid #fff;
 }
 
+.content__video-card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
 .content__video-card-title {
   overflow: hidden;
   font-family: Oswald, sans-serif;
@@ -251,6 +247,7 @@ input {
   line-height: 36px;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
@@ -261,6 +258,13 @@ input {
   -webkit-box-orient: vertical;
   line-clamp: 4;
   -webkit-line-clamp: 4;
+}
+
+.content__video-card-thumbnail {
+  flex-shrink: 0;
+  object-fit: cover;
+  inline-size: 194px;
+  block-size: 103px;
 }
 
 /* Кнопки */
